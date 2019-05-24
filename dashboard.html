@@ -1,11 +1,12 @@
+<!DOCTYPE html>
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="refresh" content="1800">
 <link rel="stylesheet" type="text/css" href="dashboardStyleSheet.css">
 <script src="dashboardScripts.js"></script>
-<head> 
+<head>
 	<title>My Dashboard</title>
-</head> 
+</head>
 <body onload="startBostonTime();/*startLocalTime();*/startSydneyTime()">
 	<div class="sidebar">
 		<a class = "timeScriptSydney" title="Current time in Sydney, Australia." align="middle" id="currentSydneyTime"></a>
@@ -19,7 +20,7 @@
 	</div>
 	<div class="projectsDropdown">
 		<button onclick="myFunction()" class="dropbtn">
-			<img width=25px height=25px margin=auto src="images\projectsIcon.PNG">	
+			<img width=25px height=25px margin=auto src="images\projectsIcon.PNG">
 		</button>
 		<div id="myDropdown" class="dropdown-content">
 			<input type="text" style="font-family: Trebuchet MS" placeholder="Search..." id="myInput" onkeyup="filterFunction()">
