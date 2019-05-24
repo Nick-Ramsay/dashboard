@@ -19,55 +19,58 @@ function filterFunction() {
 
 function startLocalTime() {
     var today = new Date();
+    var mh = today.getHours();
     var h = today.getHours();
     var m = today.getMinutes();
     var s = today.getSeconds();
-    var ampm = h >= 12 ? 'PM' : 'AM';
+    var ampm = mh >= 12 ? 'PM' : 'AM';
     h = h % 12;
     h = h ? h : 12;
     m = checkLocalTime(m);
     s = checkLocalTime(s);
     document.getElementById('currentLocalTime').innerHTML =
     h + ":" + m +" "+ampm/* + ":" + s*/;
-    var t = setTimeout(startLocalTime, );
+    var t = setTimeout(startLocalTime, 1830);
 }
 function checkLocalTime(i) {
     if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
     return i;
 }
 
-function startBostonTime() {
+function startPortlandTime() {
     var today = new Date();
-    var h = today.getUTCHours()-4;
+    var mh = today.getUTCHours();
+    var h = today.getUTCHours()+8;
     var m = today.getMinutes();
     var s = today.getSeconds();
-    var ampm = h >= 12 ? 'PM' : 'AM';
+    var ampm = h < 12 || h >= 24 ? 'PM' : 'AM';
     h = h % 12;
     h = h ? h : 12;
-    m = checkBostonTime(m);
-    s = checkBostonTime(s);
-    document.getElementById('currentBostonTime').innerHTML =
+    m = checkPortlandTime(m);
+    s = checkPortlandTime(s);
+    document.getElementById('currentPortlandTime').innerHTML =
     h + ":" + m+" "+ampm/* + ":" + s*/;
-    var t = setTimeout(startBostonTime, 1830);
+    var t = setTimeout(startPortlandTime, 1830);
 }
-function checkBostonTime(i) {
+function checkPortlandTime(i) {
     if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
     return i;
 }
 
 function startSydneyTime() {
     var today = new Date();
-    var h = today.getUTCHours()+10;
+    var mh = today.getUTCHours();
+    var h = today.getUTCHours()+11;
     var m = today.getMinutes();
     var s = today.getSeconds();
-    var ampm = h >= 12 ? 'PM' : 'AM';
+    var ampm = h > 11 && h < 24 || h >= 36 ? 'PM' : 'AM';
     h = h % 12;
     h = h ? h : 12;
-    m = checkSydneyTime(m);
-    s = checkSydneyTime(s);
+    m = checkPortlandTime(m);
+    s = checkPortlandTime(s);
     document.getElementById('currentSydneyTime').innerHTML =
     h + ":" + m+" "+ampm/* + ":" + s*/;
-    var t = setTimeout(startSydneyTime, 500);
+    var t = setTimeout(startSydneyTime, 1830);
 }
 function checkSydneyTime(i) {
     if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10

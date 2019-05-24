@@ -1,9 +1,11 @@
 body {
     font-family: "Lato", sans-serif;
     //background-color: #F4F3F5;
-    background-image: url("images/background.jfif");
+    background-image: url("images/dashboard_background.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position::absolute;
+    background-size: cover;
 }
 
 .sidebar {
@@ -19,10 +21,10 @@ body {
     overflow-x: hidden;
     padding-top: 20px;
     font-family: Trebuchet MS;
-    border-right: 5px dotted white;
+    //border-right: 5px dotted #cd7f32;
 }
 
-.timeScriptSydney {
+.timeScriptLocal {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 40px;
@@ -55,7 +57,7 @@ body {
     font-family: Trebuchet MS;
     color:white;
     text-align: center;
-    border-bottom: 5px dotted white;
+    border-bottom: 5px dotted #cd7f32;
 }
 
 .sidebar a:hover {
@@ -74,7 +76,8 @@ body {
     margin-left: 150px; /* Same as the width of the sidebar */
 }
 .currency {
-    width: 465px;
+    //width: 465px;
+    //height: 465px;
     padding: 5px 5px 5px 5px;
     display: inline-block;
     float:left;

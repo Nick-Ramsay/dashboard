@@ -1,20 +1,20 @@
-<!DOCTYPE html>
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="refresh" content="1800">
+<meta http-equiv="refresh" content="1800"> <!--1800>-->
 <link rel="stylesheet" type="text/css" href="dashboardStyleSheet.css">
+<link rel="shortcut icon" href="images\me.ico">
 <script src="dashboardScripts.js"></script>
 <head>
 	<title>My Dashboard</title>
 </head>
-<body onload="startBostonTime();/*startLocalTime();*/startSydneyTime()">
+<body onload="startPortlandTime();startLocalTime();startSydneyTime()">
 	<div class="sidebar">
-		<a class = "timeScriptSydney" title="Current time in Sydney, Australia." align="middle" id="currentSydneyTime"></a>
-		<a class = "timeTitle">Sydney</a>
-		<a class = "timeScript" title="Current time in Portland, Maine." align="middle" id="currentBostonTime"></a>
+		<a class = "timeScriptLocal" title="Current time at your location" align="middle" id="currentLocalTime"></a>
+		<a class = "timeTitle">Local</a>
+		<a class = "timeScript" title="Current time in Portland, Maine" align="middle" id="currentPortlandTime"></a>
 		<a class = "timeTitle">Portland</a>
-		<!--<a class = "timeScript" style='color: #FFCD00' title="Time at your current location." align="middle" id="currentLocalTime"></a>
-		<a class = "timeTitle">Local</a> -->
+		<a class = "timeScript" title="Time at your current location." align="middle" id="currentSydneyTime"></a>
+		<a class = "timeTitle">Sydney</a>
 		<!-- Exchange Rates Script - EXCHANGERATEWIDGET.COM -->
 <!-- End of Exchange Rates Script -->
 	</div>
@@ -24,8 +24,9 @@
 		</button>
 		<div id="myDropdown" class="dropdown-content">
 			<input type="text" style="font-family: Trebuchet MS" placeholder="Search..." id="myInput" onkeyup="filterFunction()">
-			<a href="www.cnn.com">Project 1</a>
-			<a href="www.theonion.com">Project 2</a>
+			<a href="https://www.cnn.com">CNN</a>
+			<a href="https://www.msn.com/en-us/news/politics">MSN, US Politics</a>
+			<a href="https://www.theonion.com">The Onion</a>
 		</div>
 	</div>
 	</br>
@@ -42,6 +43,10 @@
   <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
   {
   "symbols": [
+  	{
+      "description": "Dow Jones",
+      "proName": "DJ:DJI"
+    },
     {
       "description": "Apple",
       "proName": "NASDAQ:AAPL"
@@ -61,10 +66,44 @@
     {
       "description": "Cannabis Science, Inc.",
       "proName": "OTC:CBIS"
+    }
+  ],
+  "locale": "en"
+}
+  </script>
+</br>
+</br>
+</div>
+<!--Stocks row 2_-->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Quotes</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+  {
+  "symbols": [
+  	{
+      "description": "",
+      "proName": ""
     },
     {
-      "description": "athenahealth",
-      "proName": "NASDAQ:ATHN"
+      "description": "",
+      "proName": ""
+    },
+    {
+      "description": "",
+      "proName": ""
+    },
+    {
+      "description": "",
+      "proName": ""
+    },
+    {
+      "description": "",
+      "proName": ""
+    },
+    {
+      "description": "",
+      "proName": ""
     }
   ],
   "locale": "en"
@@ -84,7 +123,7 @@
 		  	<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-forex-cross-rates.js" async>
 				  {
 				  "width": 800,
-				  "height": 800,
+				  "height": 625,
 				  "currencies": [
 				    "EUR",
 				    "USD",
@@ -104,3 +143,4 @@
 <!-- TradingView Widget END -->
 </body>
 </html>
+<!--This is how to write an HTML comment-->
