@@ -60,7 +60,7 @@ function checkPortlandTime(i) {
 function startSydneyTime() {
     var today = new Date();
     var mh = today.getUTCHours();
-    var h = today.getUTCHours()+11;
+    var h = today.getUTCHours()+10;
     var m = today.getMinutes();
     var s = today.getSeconds();
     var ampm = h > 11 && h < 24 || h >= 36 ? 'PM' : 'AM';
