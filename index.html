@@ -14,11 +14,17 @@
 		<a class = "timeScript" title="Current time in Portland, Maine" align="middle" id="currentPortlandTime"></a>
 		<a class = "timeTitle">Portland, Maine</a>
 		<a class = "timeScript" title="Time at your current location." align="middle" id="currentSydneyTime"></a>
-		<a class = "timeTitle">Sydney, Australia</a>    
-  </div>
+		<a class = "timeTitle">Sydney, Australia</a>
+    <a class = "timeTitle"><button id="aboutBtn" onclick="aboutModal()">About</button></a>
 		<!-- Exchange Rates Script - EXCHANGERATEWIDGET.COM -->
 <!-- End of Exchange Rates Script -->
 	</div>
+  <div id="aboutModal" class="modal">
+    <div class="modalContent">
+      <span class="modalClose">&times;</span>
+      <p>Welcome to Nick's Dashboard.</p>
+    </div>  
+  </div>
 	<div class="projectsDropdown">
 		<button onclick="myFunction()" class="dropbtn">
 			<img width=25px height=25px margin=auto src="images\projectsIcon.png">
@@ -144,4 +150,6 @@
 		</div>
 	</div>
 <!-- TradingView Widget END -->
+
 </body>
+</html>
