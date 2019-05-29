@@ -97,7 +97,7 @@ body {
     .currency {display:none;}
     .stocks{display:none;}
 }
-@media (min-width: 501px) and (max-width: 1800px) {
+@media (min-width: 501px) and (max-width: 1400px) {
     .news {float:left;}
 }
 /*
