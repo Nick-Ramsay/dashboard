@@ -78,17 +78,18 @@ body {
 .currency {
     //width: 465px;
     //height: 465px;
+    margin-left: 150px;
     padding: 5px 5px 5px 5px;
     display: inline-block;
     float:left;
 }
 .news {
-    margin-left: 10px;
+    margin-left: 150px;
     //width: 550px;
     //height: 625px;
     padding: 5px 5px 5px 5px;
     display: inline-block;
-    float:right;
+    float:left;
 }
 @media screen and (max-height: 450px) {
     .sidebar {padding-top: 15px;}
