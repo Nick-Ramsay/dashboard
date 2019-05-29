@@ -84,17 +84,24 @@ body {
     float:left;
 }
 .news {
-    margin-left: 150px;
     //width: 550px;
     //height: 625px;
     padding: 5px 5px 5px 5px;
     display: inline-block;
-    float:left;
+    float:right;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .news {display:none;}
+    .currency {display:none;}
+    .stocks{display:none;}
+}
+/*
 @media screen and (max-height: 450px) {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
 }
+*/
 
 .dropbtn {
     padding: 5px;
