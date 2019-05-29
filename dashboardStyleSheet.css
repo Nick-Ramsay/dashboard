@@ -91,12 +91,12 @@ body {
     float:right;
 }
 
-@media (min-width: 300px) and (max-width: 1100px) {
+@media (min-width: 300px) and (max-width: 1000px) {
     .news {display:none;}
     .currency {display:none;}
     .stocks{display:none;}
 }
-@media (min-width: 1101px) and (max-width: 1400px) {
+@media (min-width: 1001px) and (max-width: 1400px) {
     .news {float:left;}
 }
 /*
