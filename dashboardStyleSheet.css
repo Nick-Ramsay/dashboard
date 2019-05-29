@@ -96,6 +96,9 @@ body {
     .currency {display:none;}
     .stocks{display:none;}
 }
+@media (min-width: 1101px) and (max-width: 1400px) {
+    .news {float:left;}
+}
 /*
 @media screen and (max-height: 450px) {
     .sidebar {padding-top: 15px;}
