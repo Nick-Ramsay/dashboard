@@ -133,13 +133,13 @@ body {
     border-radius:100%;
     border: none;
     cursor: pointer;
-    font-family:Trebuchet MS;
+    font-family: Trebuchet MS;
     //background-color: #097414;
     background-image: url("images/dashboard_sidebar_background.jpg");
 }
 
 .dropbtn:hover, .dropbtn:focus {
-    background-color: #0F831B;
+    background-color: #cd7f32;
     font-family: Trebuchet MS;
 }
 
@@ -153,8 +153,8 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
-    //background-color: #0F831B;
-    background-image: url("images/dashboard_sidebar_background.jpg"); 
+    background-color: #cd7f32;
+    //background-image: url("images/dashboard_sidebar_background.jpg"); 
     color: white;
     min-width: 160px;
     overflow: auto;
