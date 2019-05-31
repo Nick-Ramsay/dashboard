@@ -10,7 +10,7 @@ body {
 
 .sidebar {
     height: 100%;
-    width: 150px;
+    width: 125px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -60,25 +60,38 @@ body {
     border-bottom: 5px dotted #cd7f32;
 }
 
+.sidebarButton {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    //background-color: #00843D;
+    background: rgba(0, 0, 0, 0.6);
+    display: block;
+    font-family: Trebuchet MS;
+    color:white;
+    text-align: center;
+    //border-bottom: 5px dotted #cd7f32;
+}
+
 .sidebar a:hover {
     color: #f1f1f1;
 }
 
 .weather {
-    margin-left: 150px; /* Same as the width of the sidebar  */
+    margin-left: 125px; /* Same as the width of the sidebar  */
     padding: 5px;
 }
 .stocks {
-    margin-left: 150px; /* Same as the width of the sidebar */
+    margin-left: 125px; /* Same as the width of the sidebar */
     padding: 5px;
 }
 .currencyNewsRow {
-    margin-left: 150px; /* Same as the width of the sidebar */
+    margin-left: 125px; /* Same as the width of the sidebar */
 }
 .currency {
     //width: 465px;
     //height: 465px;
-    margin-left: 150px;
+    margin-left: 125px;
     padding: 5px 5px 5px 5px;
     display: inline-block;
     float:left;
@@ -86,8 +99,7 @@ body {
 .news {
     //width: 550px;
     //height: 625px;
-    margin-left: 150px;
-    padding: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5spx;
     display: inline-block;
     float:right;
 }
@@ -101,7 +113,7 @@ body {
     .news {
         //width: 550px;
         //height: 625px;
-        margin-left: 150px;
+        margin-left: 125px;
         padding: 5px 5px 5px 5px;
         display: inline-block;
         float:left;
@@ -210,8 +222,9 @@ body {
     background-color: #cd7f32;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 10px 24px;
     text-align: center;
+    align-content: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
