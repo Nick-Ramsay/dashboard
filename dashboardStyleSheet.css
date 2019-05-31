@@ -19,13 +19,13 @@ body {
     background-image: url("images/dashboard_sidebar_background.jpg");
     color:white;
     overflow-x: hidden;
-    padding-top: 20px;
+    //padding-top: 20px;
     font-family: Trebuchet MS;
     //border-right: 5px dotted #cd7f32;
 }
 
 .timeScriptLocal {
-    padding: 6px 8px 6px 16px;
+    padding: 20px 8px 6px 16px;
     text-decoration: none;
     font-size: 40px;
     //background-color: #00843D;
