@@ -130,18 +130,20 @@ body {
     padding: 5px;
     width: 40px;
     height: 40px;
-    border-radius:100%;
     border: solid;
-    border-color: white;
+    border-width: thin;
+    border-radius:100%;
+    border-color: #cd7f32;
+    background-color: #cd7f32;
     cursor: pointer;
     font-family: Trebuchet MS;
-    background-image: url("images/dashboard_sidebar_background.jpg");
 }
 
 .dropbtn:hover {
-    background-color: #cd7f32;
     font-family: Trebuchet MS;
-    background-image: none;
+    border: solid;
+    border-width: thin;
+    border-color: white;
 }
 
 .projectsDropdown {
