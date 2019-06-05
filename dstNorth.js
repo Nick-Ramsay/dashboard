@@ -12,3 +12,5 @@ var first_sunday_october = (dst_month == 9 && first_sunday == "true") ? "true":"
 var dst = (dst_full_months == "true") || ((first_sunday_april == "true") && (first_sunday_october == "false")) ? 1:0; //If months are May through September OR it is after first Sunday of April and before first Sunday of October
 
 document.write(dst)
+
+//Need to adjust for second week of march as end of DST
