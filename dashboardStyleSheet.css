@@ -25,7 +25,7 @@ body {
 }
 
 .timeScriptLocal {
-    padding: 20px 12px 6px 12px;
+    padding: 0px 12px 2px 12px;
     text-decoration: none;
     font-size: 40px;
     //background-color: #00843D;
@@ -36,8 +36,21 @@ body {
     text-align: center;
 }
 
+.timeTitleLocal {
+    padding: 2px 12px 2px 12px;
+    text-decoration: none;
+    font-size: 20px;
+    //background-color: #00843D;
+    background: rgba(0, 0, 0, 0.6);
+    display: block;
+    font-family: Trebuchet MS;
+    color:white;
+    text-align: center;
+    border-bottom: 3px dotted #cd7f32;
+}
+
 .timeScript {
-    padding: 6px 12px 6px 12px;
+    padding: 2px 12px 2px 12px;
     text-decoration: none;
     font-size: 20px;
     //background-color: #00843D;
@@ -48,16 +61,16 @@ body {
     text-align: center;
 }
 .timeTitle {
-    padding: 6px 12px 6px 12px;
+    padding: 2px 12px 2px 12px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 15px;
     //background-color: #00843D;
     background: rgba(0, 0, 0, 0.6);
     display: block;
     font-family: Trebuchet MS;
     color:white;
     text-align: center;
-    border-bottom: 5px dotted #cd7f32;
+    border-bottom: 3px dotted #cd7f32;
 }
 
 .sidebarButton {
@@ -92,14 +105,14 @@ body {
     //width: 465px;
     //height: 465px;
     margin-left: 125px;
-    padding: 5px 5px 5px 5px;
+    padding: 5px 5px 0px 5px;
     display: inline-block;
     float:left;
 }
 .news {
     //width: 550px;
     //height: 625px;
-    padding: 5px 5px 5px 5px;
+    padding: 5px 0px 5px 5px;
     display: inline-block;
     float:right;
 }
