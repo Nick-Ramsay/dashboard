@@ -6,16 +6,18 @@
 <meta name="msapplication-navbutton-color" content="#CD7F32">
 <!-- iOS Safari -->
 <meta name="apple-mobile-web-app-status-bar-style" content="#CD7F32">
-<meta http-equiv="refresh" content="1800"> <!--1800>-->
+<meta http-equiv="refresh" content="1800"> <!--1800: Referesh site every 30 minutes-->
 <link rel="stylesheet" type="text/css" href="dashboardStyleSheet.css">
 <link rel="shortcut icon" type="image/x-icon" href="images\favicon.ico">
 <script src="dashboardScripts.js"></script>
 <head>
 	<title>Nick's Dashboard</title>
 </head>
-<body onload="startPortlandTime();startLocalTime();startSydneyTime();aboutModal()">
+<body onload="startPortlandTime();startLocalTime();startSydneyTime();aboutModal();appModal()">
 	<div class="sidebar">
-    <a class = "sidebarButton"><button onclick="myFunction()" class="dropbtn"><img width=25px height=25px margin=auto src="images\projectsIcon.png"></button></a>
+    <!--<a class = "sidebarButton"><button id="appBtn" onclick="appModal()" class="appButton"><img width=25px height=25px margin=auto src="images\projectsIcon.png"></button></a>-->
+    <!--<a class = "sidebarButton"><button onclick="myFunction()" class="dropbtn"><img width=25px height=25px margin=auto src="images\projectsIcon.png"></button></a>-->
+    <a class = "sidebarButton"><button id="appButton" onclick="myFunction()" class="aboutButton">Favourite Sites</button></a>
 		<a class = "timeScriptLocal" title="Current time at your location" align="middle" id="currentLocalTime"></a>
 		<a class = "timeTitle">Local</a>
 		<a class = "timeScript" title="Current time in Portland, Maine" align="middle" id="currentPortlandTime"></a>
@@ -26,6 +28,31 @@
 		<!-- Exchange Rates Script  - EXCHANGERATEWIDGET.COM -->
 <!-- End of Exchange Rates Script -->
 	</div>
+  <div class="projectsDropdown">
+    <div id="myDropdown" class="dropdown-content">
+      <input type="text" style="font-family: Trebuchet MS" placeholder="Search..." id="myInput" onkeyup="filterFunction()">
+      <a href="https://www.cnn.com">CNN</a>
+      <a href="https://www.msn.com/en-us/news/politics">MSN, US Politics</a>
+      <a href="https://www.theonion.com">The Onion</a>
+      <a href="https://www.cnbc.com">CNBC</a>
+      <a href="https://www.reuters.com/politics">Reuters</a>
+    </div>
+  </div>
+  <div id="appModal" class="modal">
+    <div class="appContent">
+      <span class="appClose">&times;</span>
+      <div class="projectsDropdown">
+    <div id="myDropdown" class="dropdown-content">
+      <input type="text" style="font-family: Trebuchet MS" placeholder="Search..." id="myInput" onkeyup="filterFunction()">
+      <a href="https://www.cnn.com">CNN</a>
+      <a href="https://www.msn.com/en-us/news/politics">MSN, US Politics</a>
+      <a href="https://www.theonion.com">The Onion</a>
+      <a href="https://www.cnbc.com">CNBC</a>
+      <a href="https://www.reuters.com/politics">Reuters</a>
+    </div>
+  </div>
+    </div>  
+  </div>
   <div id="aboutModal" class="modal">
     <div class="modalContent">
       <span class="modalClose">&times;</span>
@@ -57,16 +84,6 @@
       </p>
     </div>  
   </div>
-	<div class="projectsDropdown">
-		<div id="myDropdown" class="dropdown-content">
-			<input type="text" style="font-family: Trebuchet MS" placeholder="Search..." id="myInput" onkeyup="filterFunction()">
-			<a href="https://www.cnn.com">CNN</a>
-			<a href="https://www.msn.com/en-us/news/politics">MSN, US Politics</a>
-			<a href="https://www.theonion.com">The Onion</a>
-      <a href="https://www.cnbc.com">CNBC</a>
-      <a href="https://www.reuters.com/politics">Reuters</a>
-		</div>
-	</div>
 	<div class="weather">
 		<a class="weatherwidget-io" href="https://forecast7.com/en/n33d87151d21/sydney/?unit=us" data-label_1="SYDNEY" data-label_2="WEATHER" data-font="Trebuchet MS" data-icons="Climacons Animated" data-theme="pure" data-textcolor="#CD7F32" data-highcolor="red" data-lowcolor="blue" data-suncolor="gold" data-cloudcolor="#CD7F32" >SYDNEY WEATHER</a>
 	</div>

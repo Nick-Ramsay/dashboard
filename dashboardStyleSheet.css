@@ -1,3 +1,21 @@
+@media (min-width: 300px) and (max-width: 500px) {
+    .news {display:none;}
+    .currency {display:none;}
+    .stocks{display:none;}
+}
+@media (min-width: 501px) and (max-width: 1800px) {
+    .news {
+        //width: 550px;
+        //height: 625px;
+        margin-left: 125px;
+        padding: 5px 5px 5px 5px;
+        display: inline-block;
+        float:left;
+        }
+}
+
+/* ABOVE: media queries to adjust site for different screen sizes*/
+
 body {
     font-family: "Lato", sans-serif;
     //background-color: #F4F3F5;
@@ -104,28 +122,7 @@ body {
     float:right;
 }
 
-@media (min-width: 300px) and (max-width: 500px) {
-    .news {display:none;}
-    .currency {display:none;}
-    .stocks{display:none;}
-}
-@media (min-width: 501px) and (max-width: 1800px) {
-    .news {
-        //width: 550px;
-        //height: 625px;
-        margin-left: 125px;
-        padding: 5px 5px 5px 5px;
-        display: inline-block;
-        float:left;
-        }
-}
-/*
-@media screen and (max-height: 450px) {
-    .sidebar {padding-top: 15px;}
-    .sidebar a {font-size: 18px;}
-}
-*/
-
+/*Start of App dropdown menu code*/
 .dropbtn {
     padding: 5px;
     width: 40px;
@@ -185,30 +182,9 @@ body {
     display: block;
     font-family: Trebuchet MS;
 }
+/*End of dropdown App Menu code*/
 
-/*
-#rcornerscurrency {
-    border-radius: 5px;
-    background-color: #FFCD00;
-    //margin:0 auto;
-    padding: 5px; 
-    width: 90%;
-    height: 90%;
-    margin-left: 50px;
-}
-
-#rcornersnews {
-    border-radius: 5px;
-    background-color: #582c83;
-    //margin:0 auto;
-    padding: 5px; 
-    width: 90%;
-    height: 90%;
-    margin-left: 50px;
-}
-*/
-/*https://news.google.com/news/rss/search/section/q/united+states%7Cpolitics%7Ceconomy%7crobert+mueller%7cnew+hampshire%7cmaine?ned=us&gl=US&hl=en*/
-
+/*Start of about modal code*/
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -270,4 +246,63 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
+/*End of about modal code*/
 
+/*Start of App modal code*/
+.appModal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.appButton {
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    border: solid;
+    border-width: thin;
+    border-radius:100%;
+    border-color: #cd7f32;
+    background-color: #cd7f32;
+    cursor: pointer;
+    font-family: Trebuchet MS;
+}
+
+.appButton:hover {
+    font-family: Trebuchet MS;
+    border: solid;
+    border-width: thin;
+    border-color: white;
+}
+
+/* Modal Content */
+.appContent {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  height:auto;
+}
+
+.appClose {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.appClose:hover,.appClose:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+/*End of app modal code*/
