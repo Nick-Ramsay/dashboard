@@ -39,7 +39,7 @@ body {
 .timeTitleLocal {
     padding: 2px 12px 2px 12px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 25px;
     //background-color: #00843D;
     background: rgba(0, 0, 0, 0.6);
     display: block;
@@ -52,7 +52,7 @@ body {
 .timeScript {
     padding: 2px 12px 2px 12px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 24px;
     //background-color: #00843D;
     display: block;
     background: rgba(0, 0, 0, 0.6);
@@ -63,7 +63,7 @@ body {
 .timeTitle {
     padding: 2px 12px 2px 12px;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 20px;
     //background-color: #00843D;
     background: rgba(0, 0, 0, 0.6);
     display: block;
