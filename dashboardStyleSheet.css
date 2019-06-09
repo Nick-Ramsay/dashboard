@@ -308,6 +308,9 @@ body {
 
 /*Start: media queries to adjust site for different screen sizes*/
 @media (min-width: 300px) and (max-width: 500px) {
+    .weather{
+      padding: 60px 0;
+    }
     .news {display:none;}
     .currency {display:none;}
     .stocks{display:none;}
