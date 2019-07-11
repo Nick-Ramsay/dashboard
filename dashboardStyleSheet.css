@@ -145,7 +145,6 @@ body {
 .projectsDropdown {
     //float: left;
     padding: 40px 0px 0px 195px;
-    border-radius:4%;
     position: relative;
     display: inline-block;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -154,6 +153,7 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
+    border-radius:4%;
     float:left;
     background-color: #cd7f32; 
     color: white;
