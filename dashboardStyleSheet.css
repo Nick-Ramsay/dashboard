@@ -77,6 +77,22 @@ body {
     border-bottom: 3px dotted #cd7f32;
 }
 
+.gitHubLink {
+    padding: 2px 12px 2px 12px;
+    text-decoration: none;
+    font-size: 16px;
+    //background-color: #00843D;
+    background: rgba(0, 0, 0, 0.6);
+    display: block;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-weight:bold;
+    color:white;
+    text-align: center;
+    //border-bottom: 3px dotted #cd7f32;
+}
+.bronzeText {
+    color:#cd7f32;
+}
 .sidebarButton {
     padding: 6px 12px 6px 12px;
     text-decoration: none;
