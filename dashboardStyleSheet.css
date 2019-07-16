@@ -166,6 +166,7 @@ body {
     border: solid;
     border-width: thin;
     border-color: white;
+    animation: shake 0.5s;
 }
 
 .projectsDropdown {
