@@ -145,6 +145,7 @@ function appModal() {
     //Get the <span> element that closes modal
     var span = document.getElementsByClassName("appClose")[0];
     //When the user clicks the button, open the modal 
+    
     btn.onclick = function() {
       modal.style.display = "block";
     }
