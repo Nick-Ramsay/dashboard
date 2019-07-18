@@ -32,11 +32,11 @@
   85% { transform: translate(0px, 0px) rotate(320deg); }
   90% { transform: translate(0px, 0px) rotate(332deg); }
   95% { transform: translate(0px, 0px) rotate(342deg); }
-  100% { transform: translate(0px, 0px) rotate(350deg); }
+  100% { transform: translate(0px, 0px) rotate(0deg); }
 }
 
 @keyframes reversespin {
-  5% { transform: translate(0px, 0px) rotate(350deg); }
+  5% { transform: translate(0px, 0px) rotate(0deg); }
   10% { transform: translate(0px, 0px) rotate(342deg); }
   15% { transform: translate(0px, 0px) rotate(332deg); }
   20% { transform: translate(0px, 0px) rotate(320deg); }
