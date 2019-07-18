@@ -197,7 +197,7 @@ body {
 
 .dropbtn:hover {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
-    animation: spin 0.75s infinite;
+    animation: spin 0.85s;
 }
 
 .projectsDropdown {
