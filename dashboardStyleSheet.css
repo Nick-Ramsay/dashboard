@@ -41,6 +41,35 @@
 }
 
 @keyframes reverseSpin {
+  4% { transform: translate(0px, 0px) rotate(0deg); }
+  8% { transform: translate(0px, 0px) rotate(-2deg); }
+  12% { transform: translate(0px, 0px) rotate(-5deg); }
+  16% { transform: translate(0px, 0px) rotate(-9deg); }
+  20% { transform: translate(0px, 0px) rotate(-15deg); }
+  24% { transform: translate(0px, 0px) rotate(-23deg); }
+  28% { transform: translate(0px, 0px) rotate(-34deg); }
+  32% { transform: translate(0px, 0px) rotate(-49deg); }
+  36% { transform: translate(0px, 0px) rotate(-68deg); }
+  40% { transform: translate(0px, 0px) rotate(-90deg); }
+  44% { transform: translate(0px, 0px) rotate(-117deg); }
+  48% { transform: translate(0px, 0px) rotate(-148deg); }
+  52% { transform: translate(0px, 0px) rotate(-180deg); }
+  56% { transform: translate(0px, 0px) rotate(-212deg); }
+  60% { transform: translate(0px, 0px) rotate(-243deg); }
+  64% { transform: translate(0px, 0px) rotate(-270deg); }
+  68% { transform: translate(0px, 0px) rotate(-292deg); }
+  72% { transform: translate(0px, 0px) rotate(-311deg); }
+  76% { transform: translate(0px, 0px) rotate(-326deg); }
+  80% { transform: translate(0px, 0px) rotate(-337deg); }
+  84% { transform: translate(0px, 0px) rotate(-345deg); }
+  88% { transform: translate(0px, 0px) rotate(-351deg); }
+  92% { transform: translate(0px, 0px) rotate(-355deg); }
+  96% { transform: translate(0px, 0px) rotate(-358deg); }
+  100% { transform: translate(0px, 0px) rotate(-360deg); }
+}
+
+/*
+@keyframes reverseSpin {
     4% { transform: translate(0px, 0px) rotate(360deg); }
     8% { transform: translate(0px, 0px) rotate(358deg); }
     12% { transform: translate(0px, 0px) rotate(355deg); }
@@ -67,6 +96,7 @@
     96% { transform: translate(0px, 0px) rotate(2deg); }
     100% { transform: translate(0px, 0px) rotate(0deg); }
   }
+*/
 
 
 body {
