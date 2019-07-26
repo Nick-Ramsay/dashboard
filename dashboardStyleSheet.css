@@ -100,7 +100,7 @@
 
 
 body {
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     //background-color: #F4F3F5;
     background-image: url("images/USS_Missouri.jpg");
     background-repeat: no-repeat;
@@ -121,7 +121,7 @@ body {
     color:white;
     //overflow-x: hidden;
     //padding-top: 20px;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     //border-right: 5px dotted #cd7f32;
 }
 
@@ -132,7 +132,7 @@ body {
     //background-color: #00843D;
     background: rgba(0, 0, 0, 0.6);
     display: block;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     font-weight:bold;
     color: white;
     text-align: center;
@@ -145,7 +145,7 @@ body {
     //background-color: #00843D;
     background: rgba(0, 0, 0, 0.6);
     display: block;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     font-weight:bold;
     color:white;
     text-align: center;
@@ -159,7 +159,7 @@ body {
     //background-color: #00843D;
     display: block;
     background: rgba(0, 0, 0, 0.6);
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     font-weight:bold;
     color:white;
     text-align: center;
@@ -172,7 +172,7 @@ body {
     //background-color: #00843D;
     background: rgba(0, 0, 0, 0.6);
     display: block;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     font-weight:bold;
     color:white;
     text-align: center;
@@ -186,7 +186,7 @@ body {
     //background-color: #00843D;
     background: rgba(0, 0, 0, 0.6);
     display: block;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     font-weight:bold;
     color:white;
     text-align: center;
@@ -207,7 +207,7 @@ body {
     //background-color: #00843D;
     background: rgba(0, 0, 0, 0.6);
     display: block;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     color:white;
     text-align: center;
     //border-bottom: 5px dotted #cd7f32;
@@ -255,16 +255,16 @@ body {
     border-color: #cd7f32;
     background-color: #cd7f32;
     cursor: pointer;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 }
 
 .dropbtn:hover {
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     animation: spin 1.0s;
 }
 
 .dropbtn:not(:hover) {
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     animation: reverseSpin 1.0s;
 }
 
@@ -273,7 +273,7 @@ body {
     position: absolute;
     //z-index: 500;
     display: inline-block;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 }
 
 .dropdown-content {
@@ -288,7 +288,7 @@ body {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     right: 0;
     z-index: 1;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 }
 
 .dropdown-content a {
@@ -296,17 +296,17 @@ body {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 }
 
 .dropdown a:hover {
     background-color: #ddd;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 }
 
 .show {
     display: block;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 }
 /*End of dropdown App Menu code*/
 
@@ -334,7 +334,7 @@ body {
     text-align: center;
     align-content: center;
     text-decoration: none;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
@@ -344,7 +344,7 @@ body {
 .aboutButton:hover, .aboutButton:focus {
     color: #cd7f32;
     background-color: white;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     background-image: none;
     animation: shuffle 1.0s;
 }
@@ -402,11 +402,11 @@ body {
     border-color: #cd7f32;
     background-color: #cd7f32;
     cursor: pointer;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 }
 
 .appButton:hover {
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     border: solid;
     border-width: thin;
     border-color: white;
