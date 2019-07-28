@@ -15,6 +15,16 @@
 </head>
 <body onload="startPortlandTime();startLocalTime();startSydneyTime();aboutModal();appModal()">
 	<div class="sidebar">
+    <div class="projectsDropdown">
+      <div id="myDropdown" class="dropdown-content">
+      <!--<input type="text" style="font-family: Trebuchet MS" placeholder="Search..." id="myInput" onkeyup="filterFunction()">-->
+        <a href="https://www.gmail.com" target="_blank">Gmail</a>
+        <a href="https://www.cnn.com" target="_blank">CNN</a>
+        <a href="https://www.msn.com/en-us/news/politics" target="_blank">MSN, US Politics</a>
+        <a href="https://www.cnbc.com" target="_blank">CNBC</a>
+          <a href="https://www.reuters.com/politics" target="_blank">Reuters, US Politics</a>
+      </div>
+    </div>
     <a class = "sidebarButton"><button id="appButton" onclick="myFunction()" class="dropbtn"><img width=25px height=25px margin=auto src="images\linksIcon.png"></button></a>
 		<a class = "timeScriptLocal" title="Current time at your location" align="middle" id="currentLocalTime"></a>
 		<a class = "timeTitleLocal">Local</a>
@@ -27,110 +37,102 @@
 		<!-- Exchange Rates Script  - EXCHANGERATEWIDGET.COM -->
 <!-- End of Exchange Rates Script -->
   </div>
-  <div class="projectsDropdown">
-    <div id="myDropdown" class="dropdown-content">
-      <!--<input type="text" style="font-family: Trebuchet MS" placeholder="Search..." id="myInput" onkeyup="filterFunction()">-->
-      <a href="https://www.gmail.com" target="_blank">Gmail</a>
-      <a href="https://www.cnn.com" target="_blank">CNN</a>
-      <a href="https://www.msn.com/en-us/news/politics" target="_blank">MSN, US Politics</a>
-      <a href="https://www.cnbc.com" target="_blank">CNBC</a>
-      <a href="https://www.reuters.com/politics" target="_blank">Reuters, US Politics</a>
+  <div class="content">
+    <div id="aboutModal" class="modal">
+      <div class="modalContent">
+        <span class="modalClose">&times;</span>
+        <p>
+          <br>
+          <img src="images\usaFlag.png" alt="United States of America">
+          <img src="images\australiaFlag.png" alt="Australia" align="right">
+          <br>
+          <br>
+          <b>Welcome to Nick's Dashboard</b>
+          <br>
+          <br>
+          I'm Nick Ramsay, an American expat currently living in Australia. Over the years, I've developed an interest in coding and I've built this page in an effort to expand and refine my knowledge of front-end coding.
+          <br>
+          <br>
+          I'm using this a homepage for all my future coding endeavours. The application icon in the top-left corner will be used to add links to the future pages I build, such as travel blogs. For now though, I'm using the application icon to keep a list of links to sites I like to visit. The page you're on now uses three files, one for JavaScript, another for CSS, and of course a final HTML file. With the exception of the times on the left-hand sidebar, all the information you see on the body of the page are powered by feeds from other websites.
+          <br>
+          <br>
+          Welcome to my page and thanks for visiting.
+          <br>
+          <br>
+          - Nick Ramsay
+          <br>
+          <br>
+          <font size ="0">
+            Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"           title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"          title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+          </font>
+          <br>
+        </p>
+      </div>
     </div>
-  </div>
-  <div id="aboutModal" class="modal">
-    <div class="modalContent">
-      <span class="modalClose">&times;</span>
-      <p>
-        <br>
-        <img src="images\usaFlag.png" alt="United States of America">
-        <img src="images\australiaFlag.png" alt="Australia" align="right">
-        <br>
-        <br>
-        <b>Welcome to Nick's Dashboard</b>
-        <br>
-        <br>
-        I'm Nick Ramsay, an American expat currently living in Australia. Over the years, I've developed an interest in coding and I've built this page in an effort to expand and refine my knowledge of front-end coding.
-        <br>
-        <br>
-        I'm using this a homepage for all my future coding endeavours. The application icon in the top-left corner will be used to add links to the future pages I build, such as travel blogs. For now though, I'm using the application icon to keep a list of links to sites I like to visit. The page you're on now uses three files, one for JavaScript, another for CSS, and of course a final HTML file. With the exception of the times on the left-hand sidebar, all the information you see on the body of the page are powered by feeds from other websites.
-        <br>
-        <br>
-        Welcome to my page and thanks for visiting.
-        <br>
-        <br>
-        - Nick Ramsay
-        <br>
-        <br>
-        <font size ="0">
-          Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"           title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"          title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
-        </font>
-        <br>
-      </p>
+    <div class="weather">
+      <a class="weatherwidget-io" href="https://forecast7.com/en/n33d87151d21/sydney/?unit=us" data-label_1="SYDNEY" data-label_2="WEATHER" data-font="Trebuchet MS" data-icons="Climacons Animated" data-theme="pure" data-textcolor="#CD7F32" data-highcolor="red" data-lowcolor="blue" data-suncolor="gold" data-cloudcolor="#CD7F32" >SYDNEY WEATHER</a>
     </div>
+  <div class="stocks">
+      <!-- TradingView Widget BEGIN -->
+  <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Quotes</span></a> by TradingView</div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+    {
+    "symbols": [
+      {
+        "description": "Dow Jones",
+        "proName": "DJ:DJI"
+      },
+      {
+        "description": "S&P 500",
+        "proName": "SPX"
+      },
+      {
+        "description": "Oil",
+        "proName": "USOIL"
+      },
+      {
+        "description": "Gold",
+        "proName": "XAUUSD"
+      }
+    ],
+    "locale": "en",
+    "colorTheme":"light",
+    "isTransparent": false
+  }
+    </script>
+  <br>
+  <br>
   </div>
-	<div class="weather">
-		<a class="weatherwidget-io" href="https://forecast7.com/en/n33d87151d21/sydney/?unit=us" data-label_1="SYDNEY" data-label_2="WEATHER" data-font="Trebuchet MS" data-icons="Climacons Animated" data-theme="pure" data-textcolor="#CD7F32" data-highcolor="red" data-lowcolor="blue" data-suncolor="gold" data-cloudcolor="#CD7F32" >SYDNEY WEATHER</a>
-	</div>
-<div class="stocks">
-		<!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-  <div class="tradingview-widget-container__widget"></div>
-  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Quotes</span></a> by TradingView</div>
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
-  {
-  "symbols": [
-  	{
-      "description": "Dow Jones",
-      "proName": "DJ:DJI"
-    },
-    {
-      "description": "S&P 500",
-      "proName": "SPX"
-    },
-    {
-      "description": "Oil",
-      "proName": "USOIL"
-    },
-    {
-      "description": "Gold",
-      "proName": "XAUUSD"
-    }
-  ],
-  "locale": "en",
-  "colorTheme":"light",
-  "isTransparent": false
-}
-  </script>
-<br>
-<br>
+  </div>
+    <div class="currencyNewsRow">
+      <div class="currency">
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/currencies/forex-cross-rates/" rel="noopener" target="blank"><span class="blue-text">Forex Rates</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-forex-cross-rates.js" async>
+            {
+            "width": 800,
+            "height": 625,
+            "currencies": [
+              "EUR",
+              "USD",
+              "GBP",
+              "AUD",
+              "NZD"
+            ],
+            "locale": "en"
+            }
+            </script>
+        </div>
+      </div>
+    <div class="news">
+      <!-- start feedwind code --> <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="89160/"></script> <!-- end feedwind code -->
+    </div>
+    <!--</div>-->
+  <!-- TradingView Widget END -->
 </div>
-	</div>
-	<!--<div class="currencyNewsRow">-->
-		<div class="currency">
-			<!-- TradingView Widget BEGIN -->
-			<div class="tradingview-widget-container">
-			  	<div class="tradingview-widget-container__widget"></div>
-			  	<div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/currencies/forex-cross-rates/" rel="noopener" target="blank"><span class="blue-text">Forex Rates</span></a> by TradingView</div>
-		  	<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-forex-cross-rates.js" async>
-				  {
-				  "width": 800,
-				  "height": 625,
-				  "currencies": [
-				    "EUR",
-				    "USD",
-				    "GBP",
-				    "AUD",
-				    "NZD"
-				  ],
-				  "locale": "en"
-				  }
-		      </script>
-		  </div>
-		</div>
-	<div class="news">
-		<!-- start feedwind code --> <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="89160/"></script> <!-- end feedwind code -->
-	</div>
-	<!--</div>-->
-<!-- TradingView Widget END -->
 </body>
 </html>
