@@ -137,7 +137,8 @@ body {
     width: 125px;
     position: fixed;
     z-index: 1;
-    background-image: url("images/dashboard_sidebar_background.jpg");
+    background: rgba(0, 0, 0, 0.6);
+    //background-image: url("images/dashboard_sidebar_background.jpg");
     color:white;
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 }
