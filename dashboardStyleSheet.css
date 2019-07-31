@@ -171,10 +171,6 @@ body {
     text-align: center;
 }
 
-.sidebar a:hover {
-    color: #f1f1f1;
-}
-
 .weather {
     width:99%;
     padding: 5px 10px 5px 10px;
@@ -274,7 +270,6 @@ body {
     border-radius:4%;
     margin-top: 5px;
     margin-bottom: 5px;
-    //padding: 9px 12px 9px 12px;
     text-align: center;
     align-content: center;
     text-decoration: none;
