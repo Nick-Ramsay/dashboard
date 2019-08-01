@@ -187,13 +187,13 @@ body {
 
 .currency {
     padding: 5px 5px 0px 5px;
-    //display: inline-block;
+    display: block;
     float:left;
 }
 .news {
     padding: 5px 0px 5px 5px;
-    //display: inline-block;
-    float:right;
+    display: block;
+    float:left;
 }
 
 /*Start of App dropdown menu code*/
