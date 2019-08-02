@@ -69,7 +69,7 @@
 }
 
 body {
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-image: url("images/USS_Missouri.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -84,9 +84,7 @@ body {
     position: fixed;
     z-index: 1;
     background: rgba(0, 0, 0, 0.6);
-    //background-image: url("images/dashboard_sidebar_background.jpg");
     color:white;
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 }
 
 .content {
@@ -99,7 +97,6 @@ body {
     text-decoration: none;
     font-size: 40px;
     display: block;
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     font-weight:bold;
     color: white;
     text-align: center;
@@ -110,7 +107,6 @@ body {
     text-decoration: none;
     font-size: 25px;
     display: block;
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     font-weight:bold;
     color:white;
     text-align: center;
@@ -122,7 +118,6 @@ body {
     text-decoration: none;
     font-size: 24px;
     display: block;
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     font-weight:bold;
     color:white;
     text-align: center;
@@ -133,7 +128,6 @@ body {
     text-decoration: none;
     font-size: 20px;
     display: block;
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     font-weight:bold;
     color:white;
     text-align: center;
@@ -147,7 +141,6 @@ body {
     text-decoration: none;
     font-size: 16px;
     display: block;
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     font-weight:bold;
     color:white;
     text-align: center;
@@ -166,36 +159,28 @@ body {
     text-decoration: none;
     font-size: 20px;
     display: block;
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     color:white;
     text-align: center;
 }
 
 .weather {
-    width:99%;
     padding: 5px 10px 5px 10px;
-    max-width: 1615px;
-}
-.stocks {
-    padding: 5px 10px 5px 10px;
-    width:99%;
-    max-width: 1615px;
 }
 
-.currencyNewsRow {
-    padding: 5px;
-    width:99%;
+.stocks {
+    padding: 5px 10px 5px 10px;
 }
 
 .currency {
-    padding: 5px 5px 0px 5px;
-    display: block;
-    float:left;
-}
-.news {
     padding: 5px 0px 5px 5px;
     display: block;
     float:left;
+}
+
+.news {
+    padding: 5px 0px 5px 5px;
+    display: block;
+    float:right;
 }
 
 /*Start of App dropdown menu code*/
@@ -209,16 +194,13 @@ body {
     border-color: #cd7f32;
     background-color: #cd7f32;
     cursor: pointer;
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 }
 
 .dropbtn:hover {
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     animation: spin 0.75s;
 }
 
 .dropbtn:not(:hover) {
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     animation: reverseSpin 0.75s;
 }
 
@@ -226,8 +208,6 @@ body {
     padding: 50px 0px 50px 40px;
     position: fixed;
     left: 200px;
-    //display: inline-block;
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 }
 
 .dropdown-content {
@@ -242,7 +222,6 @@ body {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     right: 0;
     z-index: 1;
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 }
 
 .dropdown-content a {
@@ -250,17 +229,14 @@ body {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 }
 
 .dropdown a:hover {
     background-color: #ddd;
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 }
 
 .show {
     display: block;
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 }
 /*End of dropdown App Menu code*/
 
@@ -275,7 +251,6 @@ body {
     text-align: center;
     align-content: center;
     text-decoration: none;
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     display: block;
     font-size: 16px;
     margin-left: auto;
@@ -286,12 +261,26 @@ body {
 .aboutButton:hover, .aboutButton:focus {
     color: #cd7f32;
     background-color: white;
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     background-image: none;
     animation: shuffle 1.0s;
 }
 
 /*Start: media queries to adjust site for different screen sizes*/
+@media (max-width:1780px) {
+    .news{
+        float:left;
+    }
+    
+    .stocks {
+        max-width: 810px;
+    }
+
+    .weather {
+        max-width: 810px;
+    }
+}
+/*End: media queries to adjust site for different screen sizes*/
+/*
 @media (min-width: 300px) and (max-width: 500px) {
     .weather{
       padding: 60px 0;
@@ -321,4 +310,4 @@ body {
         float:left;
     }
 }
-/*End: media queries to adjust site for different screen sizes*/
+*/
