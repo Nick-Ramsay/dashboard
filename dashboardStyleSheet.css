@@ -191,17 +191,40 @@ body {
     border: solid;
     border-width: thin;
     border-radius:100%;
-    border-color: #cd7f32;
-    background-color: #cd7f32;
+    border-color: white;
+    background-color: white;
     cursor: pointer;
 }
 
 .dropbtn:hover {
     animation: spin 0.75s;
+    background-color: lightgrey;
 }
 
 .dropbtn:not(:hover) {
     animation: reverseSpin 0.75s;
+}
+
+#circularBtn {
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    border: solid;
+    border-width: thin;
+    font-size: 30px;
+    font-weight: bolder;
+    border-radius: 100%;
+    border-color: white;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+#circularBtn:hover {
+    animation: shuffle 1.0s;
+    color: black;
+    background-color: lightgrey;
+    border-color: lightgrey;
 }
 
 .projectsDropdown {
