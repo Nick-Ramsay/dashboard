@@ -197,12 +197,12 @@ body {
 }
 
 .dropbtn:hover {
-    animation: spin 0.75s;
-    background-color: lightgrey;
+    animation: shuffle 1.0s;
 }
 
-.dropbtn:not(:hover) {
-    animation: reverseSpin 0.75s;
+.dropbtn:focus {
+    animation: spin 0.75s;
+    background-color: lightgrey;
 }
 
 #circularBtn {
@@ -302,35 +302,3 @@ body {
         max-width: 810px;
     }
 }
-/*End: media queries to adjust site for different screen sizes*/
-/*
-@media (min-width: 300px) and (max-width: 500px) {
-    .weather{
-      padding: 60px 0;
-    }
-    .news {display:none;}
-    .currency {display:none;}
-    .stocks{display:none;}
-}
-
-@media (min-width: 800px) and (min-height: 400px) and (max-width: 900px) and (max-height:500px) {
-    .news {display:none;}
-    .timeScriptLocal{display:none;}
-    .timeTitleLocal {display:none;}
-    .timeScript {
-        font-size: 30px;
-    }
-}
-
-@media (min-width:500px) and (max-width:1421px) {
-    .weather {max-width: 810px;
-    }
-    .stocks {max-width: 810px;
-    }
-    .news {
-        padding: 5px 5px 5px 5px;
-        display: inline-block;
-        float:left;
-    }
-}
-*/
