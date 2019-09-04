@@ -202,7 +202,6 @@ body {
 
 .dropbtn:focus {
     animation: spin 0.75s;
-    background-color: lightgrey;
 }
 
 #circularBtn {
