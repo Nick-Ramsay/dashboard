@@ -302,3 +302,17 @@ body {
         max-width: 810px;
     }
 }
+
+@media (max-width: 640px) {
+    .news{
+        display: none;
+    }
+    
+    .stocks {
+        display: none;
+    }
+
+    .currency {
+        display:none;
+    }
+}
