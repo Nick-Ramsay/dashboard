@@ -303,8 +303,12 @@ body {
     }
 }
 
-@media (max-width: 380px) {
-    .news{
+@media (max-width: 640px) {
+  .weather {
+    max-width: 380px;
+  
+  }
+  .news{
         display: none;
     }
     
