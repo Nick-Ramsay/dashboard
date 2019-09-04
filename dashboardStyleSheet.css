@@ -303,7 +303,7 @@ body {
     }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 380px) {
     .news{
         display: none;
     }
