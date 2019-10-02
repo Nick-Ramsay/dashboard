@@ -2,6 +2,15 @@ function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
 
+function showTimeDropdown() {
+    var x = document.getElementById("timeDropdown");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
 function filterFunction() {
     var input, filter, ul, li, a, i;
     input = document.getElementById("myInput");

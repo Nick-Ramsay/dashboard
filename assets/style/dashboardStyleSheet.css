@@ -78,62 +78,71 @@ body {
     margin: 0;
 }
 
-.sidebar {
-    height: 100%;
-    width: 125px;
+.header {
     position: fixed;
-    z-index: 1;
-    background: rgba(0, 0, 0, 0.6);
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, .8);
     color:white;
+    z-index: 10;
 }
 
-.content {
-    margin-left: 125px;
-    position:relative;
-}
-
-.timeScriptLocal {
-    padding: 2px 6px 2px 6px;
-    text-decoration: none;
+#currentLocalTime {
     font-size: 40px;
-    display: block;
     font-weight:bold;
     color: white;
     text-align: center;
+    min-width: 100px;
+    width:15%;
+    float: left;
 }
 
-.timeTitleLocal {
-    padding: 2px 12px 2px 12px;
-    text-decoration: none;
-    font-size: 25px;
-    display: block;
-    font-weight:bold;
-    color:white;
-    text-align: center;
-    border-bottom: 3px dotted #cd7f32;
+#globalTimes {
+    width: 10%;
+    min-width: 40px;
+    float:left;
 }
+
+#globalTimeBtn {
+    width: 36px;
+    height: 36px;
+}
+
+#timeDropdown {
+    background: rgba(0, 0, 0, 1);
+    color: white;
+    text-align: center;
+    min-width: 100px;
+    width:15%;
+    float: left;
+    display: none;
+    z-index: 10;
+    position: relative;
+}
+
+.content {
+    padding-top: 40px;
+}
+
 
 .timeScript {
-    padding: 2px 8px 2px 8px;
     text-decoration: none;
     font-size: 24px;
-    display: block;
     font-weight:bold;
     color:white;
     text-align: center;
+    padding: 10px 0 0 0;
 }
 
 .timeTitle {
-    padding: 2px 12px 2px 12px;
     text-decoration: none;
     font-size: 20px;
-    display: block;
     font-weight:bold;
     color:white;
     text-align: center;
-    border-bottom: 3px dotted #cd7f32;
+    padding: 5px 0 10px 0;
 }
-
+/*
 .sidebarLink {
     padding: 6px 12px 6px 12px;
     margin-top: 2px;
@@ -183,7 +192,7 @@ body {
     float:right;
 }
 
-/*Start of App dropdown menu code*/
+/*Start of App dropdown menu code
 .dropbtn {
     padding: 5px;
     width: 40px;
@@ -260,7 +269,7 @@ body {
 .show {
     display: block;
 }
-/*End of dropdown App Menu code*/
+/*End of dropdown App Menu code
 
 
 .aboutButton {
@@ -287,7 +296,7 @@ body {
     animation: shuffle 1.0s;
 }
 
-/*Start: media queries to adjust site for different screen sizes*/
+/*Start: media queries to adjust site for different screen sizes
 @media (max-width:1780px) {
     .news{
         float:left;
@@ -319,3 +328,4 @@ body {
         display:none;
     }
 }
+*/
