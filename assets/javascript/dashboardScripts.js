@@ -52,7 +52,7 @@ function startPortlandTime() {
     var second_sunday_march = (dst_month == 2 && second_sunday == "true") ? "true":"false"; //Month is March and second Sunday has passed
     var first_sunday_october = (dst_month == 9 && first_sunday == "true") ? "true":"false"; //Month is October and first Sunday has passed
 
-    var dst = (dst_full_months == "true") || ((second_sunday_march == "true") && (first_sunday_october == "false")) ? 1:0; //If months are May through September OR it is after first Sunday of April and before first Sunday of October
+    var dst = (dst_full_months === true) || ((second_sunday_march === true) && (first_sunday_october === false)) ? 1:0; //If months are May through September OR it is after first Sunday of April and before first Sunday of October
     //Daylight Savings Time North automation end...
 
     var today = new Date();
@@ -88,7 +88,7 @@ function startSydneyTime() {
     var first_sunday_april = (dst_month == 3 && first_sunday == "true") ? "true":"false"; //Month is April and first Sunday has passed
     var first_sunday_october = (dst_month == 9 && first_sunday == "true") ? "true":"false"; //Month is October and first Sunday has passed
 
-    var dst = (dst_full_months == "true") || ((first_sunday_april == "false") && (first_sunday_october == "true")) ? 1:0; //If months are November through March OR it is before first Sunday of April and after first Sunday of October
+    var dst = (dst_full_months === true) || ((first_sunday_april === false) && (first_sunday_october === true)) ? 1:0; //If months are November through March OR it is before first Sunday of April and after first Sunday of October
     //Daylight Savings Time South automation end...
 
     var today = new Date();
