@@ -44,7 +44,7 @@ function startPortlandTime() {
     var dst_dom = dst_date.getDate(); //Day of Month
     var dst_dow = dst_date.getDay()+1; //Day of Week, one added to make even with var dom
 
-    var dst_full_months = (dst_month > 3 && dst_month < 9) ? "true":"false"; //Full months of April through September are always DST
+    var dst_full_months = (dst_month > 3 || dst_month < 9) ? "true":"false"; //Full months of April through September are always DST
     var first_week = dst_dom <= 7 ? "true":"false"; //True means it's still first week of month
     var first_sunday = (!first_week && dst_dow < dst_dom) ? "true":"false"; //First Sunday of first week of month has passed
     var second_week = (dst_dom > 7 && dst_dom < 15) ? "true":"false"; //True means it's the second week of month
@@ -82,7 +82,7 @@ function startSydneyTime() {
     var dst_dom = dst_date.getDate(); //Day of Month
     var dst_dow = dst_date.getDay()+1; //Day of Week, one added to make even with var dom
 
-    var dst_full_months = (dst_month > 9 && dst_month < 3) ? "true":"false"; //Full months of November through March are always DST
+    var dst_full_months = (dst_month > 9 || dst_month < 3) ? "true":"false"; //Full months of November through March are always DST
     var first_week = dst_dom <= 7 ? "true":"false"; //True means it's still first week of month
     var first_sunday = (!first_week && dst_dow < dst_dom) ? "true":"false"; //First Sunday of first week of month has passed
     var first_sunday_april = (dst_month == 3 && first_sunday == "true") ? "true":"false"; //Month is April and first Sunday has passed
