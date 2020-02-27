@@ -29,11 +29,8 @@
 <body onload="startLocalTime();startPortlandTime();startSydneyTime();showTimeDropdown()">
   <header class="header">
     <div id="currentLocalTime" title="Current time at your location"></div>
-    <div id="globalTimes" title="Times at other locations">
-      <img id="globalTimeBtn" onclick="showTimeDropdown()" src="assets/images/globe.png">
-    </div>
+      <img id="globalTimeBtn" onclick="showTimeDropdown()" title="Times at other locations" src="assets/images/globe.png">
   </header>
-  <!--Begin Weather Code-->
   <main>
     <div class="content">
       <div id="timeDropdown">
@@ -42,41 +39,7 @@
         <div class="timeScript" title="Current time in Sydney, Australia." align="middle" id="currentSydneyTime"></div>
         <div class="timeTitle">Sydney, Australia</div>
       </div>
-      <div id="forecastContainer">
-        <div id="currentWeather">
-          <div id="currentWeatherCity"></div>
-          <div id="currentWeatherIcon"></div>
-          <div id="currentWeatherConditions"></div>
-        </div>
-        <div class="fiveDayWeatherOdd" id="dayOne">
-          <p class="forecastDow" id="dayOneDow"></p>
-          <div id="dayOneIconDiv"></div>
-          <div>
-            <span class="forecastLow" id="dayOneLow"></span>
-            <span class="forecastHigh" id="dayOneHigh"></span>
-          </div>
-        </div>
-        <div class="fiveDayWeatherEven" id="dayTwo">
-          <p class="forecastDow" id="dayTwoDow"></p>
-          <div id="dayTwoIconDiv"></div>
-          <span class="forecastLow" id="dayTwoLow"></span>
-          <span class="forecastHigh" id="dayTwoHigh"></span>
-        </div>
-        <div class="fiveDayWeatherOdd" id="dayThree">
-          <p class="forecastDow" id="dayThreeDow"></p>
-          <div id="dayThreeIconDiv"></div>
-          <span class="forecastLow" id="dayThreeLow"></span>
-          <span class="forecastHigh" id="dayThreeHigh"></span>
-        </div>
-        <div class="fiveDayWeatherEven" id="dayFour">
-          <p class="forecastDow" id="dayFourDow"></p>
-          <div id="dayFourIconDiv"></div>
-          <span class="forecastLow" id="dayFourLow"></span>
-          <span class="forecastHigh" id="dayFourHigh"></span>
-        </div>
-      </div>
     </div>
-    <!--End Weather Code-->
   </main>
 </body>
 

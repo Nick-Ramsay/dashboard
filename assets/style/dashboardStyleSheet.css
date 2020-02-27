@@ -78,6 +78,12 @@ body {
     margin: 0;
 }
 
+#globalTimeBtn {
+    cursor: pointer;
+    margin: 7px;
+}
+
+
 header {
     position: fixed;
     top: 0;
